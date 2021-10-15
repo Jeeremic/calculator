@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body class="theme-dark">
+    <div class="container">
+    <!--NAV-->
+        <div class="top">
+            <h1>calc</h1>
+            <div class="themes">
+                <p class="text1">theme</p>
+                <div class="sorting">
+                    <p class="numberTheme">1 2 3</p>
+                    <div class="cal-theme">
+                        <input id="theme1" class="changeTheme" type="radio" name="theme" value="0" checked>
+                        <input id="theme2" class="changeTheme" type="radio" name="theme" value="1">
+                        <input id="theme3" class="changeTheme" type="radio" name="theme" value="2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--INPUT-->
+        <div class="display">
+            <div data-first-operand class="first-opperand"></div>
+            <div data-secound-operand class="secound-operand"></div>
+        </div>
+        <!--OPERATIONS-->
+        <div class="calculator">
+            <div class="column1">
+                <button data-number class="number">7</button>
+                <button data-number class="number">8</button>
+                <button data-number class="number">9</button>
+                <button data-delete class="delete">del</button>
+            </div>
+            <div class="column2">
+                <button data-number class="number">4</button>
+                <button data-number class="number">5</button>
+                <button data-number class="number">6</button>
+                <button data-operation class="number">+</button>
+            </div>
+            <div class="column3">
+                <button data-number class="number">1</button>
+                <button data-number class="number">2</button>
+                <button data-number class="number">3</button>
+                <button data-operation class="number">-</button>
+            </div>
+            <div class="column4">
+                <button data-number class="number">.</button>
+                <button data-number class="number">0</button>
+                <button data-operation class="number">/</button>
+                <button data-operation class="number">x</button>
+            </div>
+            <div class="column5">
+                <button deta-all-clear class="reset">RESET</button>
+                <button data-equals class="equal">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="themes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

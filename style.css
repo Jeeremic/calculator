@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark1: hsl(222, 26%, 31%);
+    --dark2: #FFFFFF;
+    --dark3: #F96B5B; /* ball */
+    --dark4: #181F33;
+    --dark5: #242D44;
+    --dark6: #EAE3DC;
+    --dark7: #979797; /* empty */
+    --dark8: #434A59;
+    --dark9: #647198;
+    --dark10: #D03F2F;
+    --dark11: rgba(255, 255, 254, 1);
+    --dark12: #A2B2E1;
+    --dark13: #93261A;
+    --dark14: inset 0px -4px 0px #B3A497;
+    --dark15: #242D44;
+    --dark16: rgba(162,178,225, 0.9);
+    --dark17: rgba(249,107,91, 0.9);
+    --dark18: #FFFFFF;
+    --dark19: #FFFFFF;
+}
+
+.body .default {
+    /* DARK */
+    --dark1: hsl(222, 26%, 31%);
+    --dark2: #FFFFFF;
+    --dark3: #F96B5B; /* ball */
+    --dark4: #181F33;
+    --dark5: #242D44;
+    --dark6: #EAE3DC;
+    --dark7: #979797; /* empty */
+    --dark8: #434A59;
+    --dark9: #647198;
+    --dark10: #D03F2F;
+    --dark11: rgba(255, 255, 254, 1);
+    --dark12: #A2B2E1;
+    --dark13: #93261A;
+    --dark14: inset 0px -4px 0px #B3A497;
+    --dark15: #242D44;
+    --dark16: rgba(162,178,225, 0.9);
+    --dark17: rgba(249,107,91, 0.9);
+    --dark18: #FFFFFF;
+    --dark19: #FFFFFF;
+}
+
+.theme-light {
+    /* LIGHT */
+    --dark1: hsl(0, 0%, 90%);
+    --dark2: #36362C;
+    --dark3: #F96B5B;
+    --dark4: #D2CDCD;
+    --dark5: #36362C;
+    --dark6: #E5E4E1;
+    --dark7: ; /* empty */
+    --dark8: ; /* empty */
+    --dark9: #378187;;
+    --dark10: #C85402;
+    --dark11: rgba(255, 255, 254, 1);
+    --dark12: rgba(98, 181, 188, 1);
+    --dark13: #F96B5B;
+    --dark14: inset 0px -4px 0px #A79E91;
+    --dark15: #D2CDCD;
+    --dark16: rgba(98,181,188, 0.9);
+    --dark17: rgba(255,138,56, 0.8);
+    --dark18: #FFFFFF;
+    --dark19: #FFFFFF;
+}
+
+.theme-purple {
+    /* PURPLE */
+    --dark1:  hsl(268, 75%, 9%);
+    --dark2: #FFE53D;
+    --dark3: #93FFF8;
+    --dark4: #1E0936;
+    --dark5: #FFE53D;
+    --dark6: #331C4D;
+    --dark7: ; /* empty */
+    --dark8: ; /* empty */
+    --dark9: #56077C;
+    --dark10: #00DED0;
+    --dark11: rgba(108, 52, 172, 1);
+    --dark12: rgba(134, 49, 175, 1);
+    --dark13: #00DED0;
+    --dark14: inset 0px -4px 0px #881C9E;
+    --dark15: #1E0936;
+    --dark16: rgba(134,49,175, 0.9);
+    --dark17: rgba(255,248,147, 0.8);
+    --dark18: #FFFFFF;
+    --dark19: #1A2327;
+}
+
+body {
+    background-color: var(--dark1);
+    font-family: 'Spartan';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1500px; */
+    padding: 0 30px;
+    margin: 100px auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 730px; */
+    width: 25%;
+    gap: 20px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+h1 {
+    padding-top: 5px;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.5333px;
+    color: var(--dark2);
+}
+
+.themes {
+    display: flex;
+    flex-direction: row;
+}
+
+.sorting {
+    position: relative;
+}
+
+.cal-theme {
+    height: 25px;
+    width: 70px;
+    border-radius: 30px;
+    position: absolute;
+    left: -12px;
+    top: 11px;
+    background-color: var(--dark15);
+}
+
+.changeTheme:checked {
+    background-color: var(--dark3);
+}
+
+.numberTheme {
+    font-family: 'Spartan', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: var(--dark2);
+    margin: 0;
+    letter-spacing: 6px;
+    position: relative;
+    top: -10px;
+    left: -4px;
+}
+
+.text1 {
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 20px;
+    color: var(--dark2);
+}
+
+.changeTheme {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--dark15);
+    cursor: pointer;
+    margin: 5px 0px 0px 2px;
+    top: 4px;
+    transition: 0.3s;
+    appearance: none;
+}
+
+.display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    background-color: var(--dark4);
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    height: 128px;
+    color: var(--dark2);
+    font-size: 48px;
+    font-weight: 700;
+    text-align: right;
+    padding-right: 30px;
+    overflow: hidden;
+}
+
+.calculator {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--dark4);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.column3 {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.column4 {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.column5 {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.number {
+    width: 101px;
+    height: 64px;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.533333px;
+    box-shadow: var(--dark14);
+    border-radius: 10px;
+    background-color: var(--dark6);
+    color: var(--dark5);
+    font-weight: 700;
+    border: none;
+}
+
+.number:hover {
+    background-color: var(--dark11);
+}
+
+.delete {
+    width: 101px;
+    height: 64px;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: -0.533333px;
+    box-shadow: inset 0px -4px 0px #414E73;
+    border-radius: 10px;
+    background-color: var(--dark9);
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    color: var(--dark18);
+    border: none;
+}
+
+.delete:hover {
+    background-color: var(--dark12);
+}
+
+.reset {
+    width: 227px;
+    height: 64px;
+    box-shadow: inset 0px -4px 0px #414E73;
+    border-radius: 10px; 
+    background-color: var(--dark9);  
+    font-weight: 700;
+    font-size: 20px; 
+    text-align: center;
+    color: var(--dark18);
+    border: none;
+}
+
+.reset:hover {
+    background-color: var(--dark16);
+}
+
+.equal {
+    width: 227px;
+    height: 64px;
+    background-color: var(--dark10);
+    box-shadow: inset 0px -4px 0px #93261A;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--dark19);    
+    border: none;
+}
+
+.equal:hover {
+    background-color: var(--dark17);
+}
+
+@media screen and (max-width: 1000px) {
+
+    .container {
+        width: 50%;
+    }
+
+    .display {
+        height: 100px;
+    }
+
+    .calculator {
+        gap: 5px;
+        padding: 15px;
+    }
+
+    .column1 {
+        gap: 10px;
+    }   
+
+    .delete {
+        font-size: 15px;
+    }
+    
+    .column2 {
+        gap: 10px;
+    }
+
+    .column3 {  
+        gap: 10px;
+    }
+
+    .column4 {
+        gap: 10px;
+    }
+
+    .column5 {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .container {
+        width: 80%;
+    }
+
+    .calculator {
+        gap: 5px;
+    }
+
+    .column1 {
+        gap: 5px;
+    }   
+    
+    .column2 {
+        gap: 5px;
+    }
+
+    .column3 {  
+        gap: 5px;
+    }
+
+    .column4 {
+        gap: 5px;
+    }
+
+    .column5 {
+        gap: 5px;
+    }
+
+    .number {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        width: 100%;
+    }
+
+    .display {
+        font-size: 32px;
+    }
+
+    .calculator {
+        gap: 15px;
+    }
+
+    .number {
+        border-radius: 5px;
+    }
+
+    .column1 {
+        gap: 10px;
+    }   
+    
+    .column2 {
+        gap: 10px;
+    }
+
+    .column3 {  
+        gap: 10px;
+    }
+
+    .column4 {
+        gap: 10px;
+    }
+
+    .column5 {
+        gap: 10px;
+    }
+
+    .delete {
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    .reset {
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    .equal {
+        border-radius: 5px;
+    }
+}
