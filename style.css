@@ -13,7 +13,7 @@
     --dark4: #181F33;
     --dark5: #242D44;
     --dark6: #EAE3DC;
-    --dark7: #979797; /* empty */
+    --dark7: #979797; 
     --dark8: #434A59;
     --dark9: #647198;
     --dark10: #D03F2F;
@@ -36,7 +36,7 @@
     --dark4: #181F33;
     --dark5: #242D44;
     --dark6: #EAE3DC;
-    --dark7: #979797; /* empty */
+    --dark7: #979797; 
     --dark8: #434A59;
     --dark9: #647198;
     --dark10: #D03F2F;
@@ -103,7 +103,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* max-width: 1500px; */
     padding: 0 30px;
     margin: 100px auto;
 }
@@ -113,7 +112,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* max-width: 730px; */
     width: 25%;
     gap: 20px;
 }
